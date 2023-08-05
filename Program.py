@@ -41,19 +41,18 @@ def main():
 			print(colored("Run with no arguments to initiate and connect to csgo", attrs=['bold']))
 			print(colored("Make sure you set up csgo to receive connections with this launch option: -netconport "+str(tn_port), attrs=['bold']))
 	
-	# Make sure cs:go is running before trying to connect
+	# Make sure CS:GO is running before trying to connect
 	if not processExists("csgo.exe"):
 		print("Waiting for csgo to start... ")
 		while not processExists("csgo.exe"):
 			sleep(0.25)
 		sleep(10)
 
-	# Initialize csgo telnet connection
+	# Initialises csgo telnet connection
 	print("Trying to connect to " + tn_host + ":" + tn_port)
 	try:
 		tn = telnetlib.Telnet(tn_host, tn_port)
 	except ConnectionRefusedError:
-		# Retry in 30 seconds
 		sleep(30)
 		pass
 	try:
