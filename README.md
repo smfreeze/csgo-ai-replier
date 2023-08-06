@@ -6,15 +6,15 @@ Uses the (locally-run) oogabooga web ui for running LLMs and NOT ChatGPT.
 As you are self-hosting the LLMs (that unsuprisingly use your GPU) you may see a performance decrease in CS:GO (although, for me at least, this is minor).
 <br>
 You COULD host the LLMs on another device (w/GPU) and use the oogabooga public api feature to play without performance changes.
-## Setup
-### Program setup
+# Setup
+## Program setup
 cd into where you want to install it and then:
 ```
 git clone https://github.com/smfreeze/csgo-oogabooga-chatbot.git
 cd csgo-oogabooga-chatbot
 pip3 install -r requirements.txt
 ```
-### Oogabooga setup
+## Oogabooga setup
 (Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)
 <br><br>
 Warning: For the average 7B model, it requires a card with at least 6GB of VRAM. If you're running on CPU you need at least 6-8GB of ram.
