@@ -16,6 +16,7 @@ pip3 install -r requirements.txt
 ```
 ### Oogabooga setup
 (thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)
+<br>
 Warning: For the average 7B model, it requires a card with at least 6GB of VRAM. If you're running on CPU you need at least 6-8GB of ram.
 
 If you're willing to run on the inferior smaller parameter count models like Pythia-2.8B-deduped or something then it'll work on less RAM/VRAM, but the output is untested and frankly likely to be bad.
