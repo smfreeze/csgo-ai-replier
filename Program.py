@@ -58,7 +58,7 @@ def main():
 	try:
 		tn = telnetlib.Telnet(tn_host, tn_port)
 	except ConnectionRefusedError:
-		print("Connection refused. Don't forget to add   -netconport " + str(tn_port) + "to launch options.")
+		print("Connection refused. Don't forget to add -netconport " + str(tn_port) + " to launch options.")
 		sys.exit(1)
 	print("Successfully Connected")
 
