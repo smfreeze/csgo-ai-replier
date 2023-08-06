@@ -27,7 +27,7 @@ def processExists(processName):
 			return True
 	return False
 
-# Runs commands on the csgo console
+# Runs commands on the CS:GO console
 def run(txn, command):
 	cmd_s = command + "\n"
 	txn.write(cmd_s.encode('utf-8'))
@@ -48,7 +48,7 @@ def main():
 			sleep(0.25)
 		sleep(10)
 
-	# Initialises csgo telnet connection
+	# Initialises CS:GO telnet connection
 	print("Trying to connect to " + tn_host + ":" + tn_port)
 	try:
 		tn = telnetlib.Telnet(tn_host, tn_port)
@@ -73,6 +73,7 @@ def main():
 				whole_line = last_line
 				last_line = last_line.split("‎")
 
+				# Parses the name
 				sender = str(last_line[0])
 				sender = sender.replace("(Counter-Terrorist) ", "")
 				sender = sender.replace("(Terrorist) ", "")
