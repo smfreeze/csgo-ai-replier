@@ -29,10 +29,6 @@ After downloading and unzipping the 1-click installer, run `start_windows.bat`. 
 
 The install script should then give you a web address to the web ui after installing requirements, go to the model section. Install a model (look on HugginFace), copy the model name and paste into model download section (many tutorials of this exist)
 
-Here's an example of what a username/modelname looks like on HuggingFace:
-
-![Example of a model on HuggingFace](https://github.com/DeSinc/SallyBot/assets/36467674/becc58e0-8e96-42f2-bfca-79c1bcc86fae)
-
 After the installing has finished you need to set up the arguements in the `webui.py` file to allow the script to communicate with Oobabooga. It can be found near the top of the file.
 
 ![Showing where to input args](https://github.com/DeSinc/SallyBot/assets/36467674/a7c6e8b0-6644-4c73-878b-9b2cb44c1d3a)
