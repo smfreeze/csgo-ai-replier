@@ -8,8 +8,8 @@ You could host the LLMs on another device (w/GPU) and use the public api feature
 ### Program setup
 cd into where you want to install it and then:
 ```
-git clone 
+git clone https://github.com/smfreeze/csgo-oogabooga-chatbot.git
 cd csgo-oogabooga-chatbot
-
+pip3 install -r requirements.txt
 ```
 ### Oogabooga setup
