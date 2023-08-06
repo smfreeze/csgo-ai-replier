@@ -14,7 +14,7 @@ tn_host = "127.0.0.1"
 tn_port = "2121"
 cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\"
 user = "smfreeze" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
-infinite_chat_mode = True # Setting to True causes bot to respond to itself
+infinite_chat_mode = False # Setting to True causes bot to respond to itself
 
 def signal_handler(signal, frame):
 	print("\nquitting...")
