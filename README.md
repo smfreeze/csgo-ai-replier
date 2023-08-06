@@ -23,7 +23,7 @@ pip3 install -r requirements.txt
 Make appropriate changes to Program.py in the config section
 
 ## Oogabooga setup
-(Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for some information/data in this Oogabooga setup guide)
+(Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for some information/data regarding this Oogabooga setup guide)
 <br><br>
 Warning: For the average 7B model, it requires a card with at least 6GB of VRAM.
 
