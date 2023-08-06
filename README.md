@@ -18,7 +18,8 @@ It will automatically reply to every enemy/teammate message, but you can talk to
 
 ## Examples
 Obviously this is going to entirely depend on the model you use, but here are a few:
-![Outdated Example of AI](https://www.smfreeze.com/githubasset/csgo-example-1.png) (This example is outdated, it is no longer ai:, it is now prompt:)
+![Outdated Example of AI](https://www.smfreeze.com/githubasset/csgo-example-1.png)
+(This example is outdated, it is no longer ai:, it is now prompt:)
 
 
 # Setup
