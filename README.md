@@ -65,28 +65,20 @@ Example of args:
 
 If you'd like to modify the parameters for Oobabooga, it's this section here:
 ```c#
-var parameters = new
-{
-    prompt = oobaboogaInputPrompt,
-    max_new_tokens = tokenCount,
-    do_sample = false,
-    temperature = 0.5,
-    top_p = 0.1,
-    typical_p = 1,
-    repetition_penalty = 1.18,
-    encoder_repetition_penalty = 1,
-    top_k = 40,
-    num_beams = 1,
-    penalty_alpha = 0,
-    min_length = 0,
-    length_penalty = 1,
-    no_repeat_ngram_size = 0,
-    early_stopping = true,
-    stopping_strings = new string[] { "\n[", "\n>", "]:", "\n#", "\n##", "\n###", "##", "###", "000000000000", "1111111111", "0.0.0.0.", "1.1.1.1.", "2.2.2.2.", "3.3.3.3.", "4.4.4.4.", "5.5.5.5.", "6.6.6.6.", "7.7.7.7.", "8.8.8.8.", "9.9.9.9.", "22222222222222", "33333333333333", "4444444444444444", "5555555555555", "66666666666666", "77777777777777", "888888888888888", "999999999999999999", "01010101", "0123456789", "<noinput>", "<nooutput>" },
-    seed = -1,
-    add_bos_token = true,
-    ban_eos_token = false,
-    skip_special_tokens = true
-};
+request = {
+        'user_input': user_input,
+        'max_new_tokens': 750,
+        'auto_max_new_tokens': False,
+        'history': history,
+        'mode': 'chat',
+        'character': character, # Change/add this in the oogabooga api (chat settings -> character)
+        'instruction_template': 'Vicuna-v1.1', 
+        'your_name': 'You',
+        'regenerate': False,
+        '_continue': False,
+        'stop_at_newline': False,
+        'chat_generation_attempts': 1,
+        'chat-instruct_command': 'Continue the chat dialogue below. Write a single reply for the character "<|You are a gamer|>".\n\n<|You hate the people speaking to you|>',
+    }
 ```
-(From Program.cs in the OobaboogaReply() function)
+(From OogaAPI.py in the getResponse() function)
