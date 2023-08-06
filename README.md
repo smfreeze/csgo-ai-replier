@@ -15,7 +15,7 @@ cd csgo-oogabooga-chatbot
 pip3 install -r requirements.txt
 ```
 ### Oogabooga setup
-`(Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)`
+`(Thanks` [DeSinc](https://github.com/DeSinc/SallyBot) `for writing this setup guide)`
 <br><br>
 Warning: For the average 7B model, it requires a card with at least 6GB of VRAM. If you're running on CPU you need at least 6-8GB of ram.
 
