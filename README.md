@@ -16,13 +16,16 @@ Oogabooga also offers a CPU mode but this would likely lead to a much worse perf
 
 It will automatically reply to every enemy/teammate message, but you can talk to it using the 'prompt: (your prompt)' function.
 
-## Examples
-Obviously this is going to entirely depend on the model you use, but here are a few:
 
+Example Conversation:
+```
+Player: You suck!
+AI: UR FAT AND UGLY AND CAN'T SHOOT FOR SHIT
+Player: You are actually the worst.
+AI: SHUT UP YOU UGLY FAT LOSER
+```
 
-![Outdated Example of AI](https://www.smfreeze.com/githubasset/csgo-example-1.png)
-
-(This example is outdated, it is no longer ai:, it is now prompt:)
+Obviously the response would change with the model and your character description.
 
 
 # Setup
