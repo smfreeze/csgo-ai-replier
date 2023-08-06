@@ -57,6 +57,9 @@ Example of args:
 `--model TheBloke/WizardLM-7B-uncensored-GPTQ --loader exllama_hf --api --listen-port 7862 --wbits 4 --groupsize 128`
 
 ![Image showing example of args](https://github.com/DeSinc/SallyBot/assets/36467674/eaa1caf1-0285-4c87-98f9-b45ba65d6df6)
+<br>
+(SMFreeze here: I do not understand the difference between --api and --extension api, but I haven't really tested it because mine works fine with --api)
+<br>
 
 If you'd like to modify the parameters for Oobabooga, it's this section here:
 ```c#
