@@ -33,7 +33,7 @@ def getResponse(user_input):
                 result = response.json()['results'][0]['history']['visible'][-1][1]
                 return result
             except (KeyError, json.JSONDecodeError):
-                print("Invalid response data format.\nMake sure your character is saved as .yaml (use web ui to make a character if you have not already!)")
+                print("Invalid response data format.\nMake sure your character is saved and loaded as .yaml (use web ui to make a character if you have not already!)")
     except Exception as e:
         print("No connection to oogabooga server on URI " + URI)
         sys.exit(1)
