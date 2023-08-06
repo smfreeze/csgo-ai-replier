@@ -14,6 +14,8 @@ git clone https://github.com/smfreeze/csgo-oogabooga-chatbot.git
 cd csgo-oogabooga-chatbot
 pip3 install -r requirements.txt
 ```
+<br>
+Make appropriate changes to Program.py in the config section
 ## Oogabooga setup
 (Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)
 <br><br>
