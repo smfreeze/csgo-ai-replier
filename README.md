@@ -12,6 +12,12 @@ You COULD host the LLMs on another device (w/GPU) and use the oogabooga public a
 
 
 Oogabooga also offers a CPU mode but this would likely lead to a much worse performance in CS:GO.
+
+
+## Examples
+
+
+
 # Setup
 ## Program setup
 cd into where you want to install it and then:
