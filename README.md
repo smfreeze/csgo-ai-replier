@@ -25,7 +25,7 @@ Player: You are actually the worst.
 AI: SHUT UP YOU UGLY FAT LOSER
 ```
 
-Obviously the response would change with the model and your character description.
+Obviously, the response would change with the model and your character description.
 
 
 # Setup
