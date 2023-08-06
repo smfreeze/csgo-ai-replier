@@ -14,8 +14,11 @@ You COULD host the LLMs on another device (w/GPU) and use the oogabooga public a
 Oogabooga also offers a CPU mode but this would likely lead to a much worse performance in CS:GO.
 
 
+It will automatically reply to every enemy/teammate message, but you can talk to it using the 'prompt: (your prompt)' function.
+
 ## Examples
-Obviously this is going to entirely depend on the model you use.
+Obviously this is going to entirely depend on the model you use, but here are a few:
+
 
 
 # Setup
