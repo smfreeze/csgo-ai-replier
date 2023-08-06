@@ -23,7 +23,7 @@ def getResponse(user_input):
         '_continue': False,
         'stop_at_newline': False,
         'chat_generation_attempts': 1,
-        'chat-instruct_command': 'Continue the chat dialogue below. Write a single reply for the character "<|You are a gamer|>".\n\n<|You hate the people speaking to you|>',
+        'chat-instruct_command': 'Continue the chat dialogue below. Write a single reply for the character "<|Character|>".\n\n<|Prompt|>',
     }
 
     try:
