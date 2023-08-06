@@ -87,8 +87,8 @@ def main():
 
 				print(sender + " : " + message)
 				if sender == user:
-					if message[:3] == 'ai:':
-						message = message[3:]
+					if message[:3] == 'prompt:':
+						message = message[6:]
 						response = oob.getResponse(message)
 						run(tn, "say " + response)
 						print("AI : " + response)
