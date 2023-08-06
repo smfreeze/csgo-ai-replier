@@ -64,7 +64,7 @@ Example of args:
 <br>
 
 If you'd like to modify the parameters for Oobabooga, it's this section here:
-```c#
+```python
 request = {
         'user_input': user_input,
         'max_new_tokens': 750,
