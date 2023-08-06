@@ -15,7 +15,7 @@ Oogabooga also offers a CPU mode but this would likely lead to a much worse perf
 
 
 ## Examples
-
+Obviously this is going to entirely depend on the model you use.
 
 
 # Setup
