@@ -15,7 +15,7 @@ cd csgo-oogabooga-chatbot
 pip3 install -r requirements.txt
 ```
 ### Oogabooga setup
-(Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)
+`(Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for writing this setup guide)`
 <br><br>
 Warning: For the average 7B model, it requires a card with at least 6GB of VRAM. If you're running on CPU you need at least 6-8GB of ram.
 
@@ -58,7 +58,7 @@ Example of args:
 
 ![Image showing example of args](https://github.com/DeSinc/SallyBot/assets/36467674/eaa1caf1-0285-4c87-98f9-b45ba65d6df6)
 <br>
-(SMFreeze here: I do not understand the difference between --api and --extension api, but I haven't really tested it because mine works fine with --api)
+`(SMFreeze here: I do not understand the difference between --api and --extension api, but I haven't really tested it because mine works fine with --api)`
 <br>
 
 If you'd like to modify the parameters for Oobabooga, it's this section here:
