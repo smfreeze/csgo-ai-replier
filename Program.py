@@ -13,7 +13,7 @@ from os import path
 tn_host = "127.0.0.1"
 tn_port = "2121"
 cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\"
-user = "Bizon Man" # Your CSGO Username to avoid infinite looping
+user = "Bizon Man" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
 
 def signal_handler(signal, frame):
 	print("\nquitting...")
