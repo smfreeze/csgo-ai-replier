@@ -13,8 +13,8 @@ from os import path
 tn_host = "127.0.0.1"
 tn_port = "2121"
 cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\"
-user = "smfreeze" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
-infinite_chat_mode = 0 # Setting to 1 causes bot to respond to itself
+user = "Bruder Tortellini" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
+infinite_chat_mode = True # Setting to True causes bot to respond to itself
 
 def signal_handler(signal, frame):
 	print("\nquitting...")
@@ -86,8 +86,19 @@ def main():
 				message = str(last_line[1])
 				message = re.sub(r'^.*? : ', '', message)
 				message = re.sub(r"^\s+", "", message)
-
-				if sender == user and infinite_chat_mode == 0:
+				
+				'''
+				if message == 'infinite_chat_mode = True' and infinite_chat_mode == 0 and sender == user:
+					infinite_chat_mode = True
+					sleep(1)
+					run(tn, "say Infinite chat has been enabled - the bot will now respond to itself.")
+				if message == 'infinite_chat_mode = False' and infinite_chat_mode == 1 and sender == user:
+					infinite_chat_mode = False
+					sleep(1)
+					run(tn, "say Infinite chat has been disabled - the bot will no longer respond to itself.")
+				'''
+				
+				if sender == user and infinite_chat_mode == False:
 					if message[:7] == 'prompt:':
 						print(sender + " : " + message)
 						message = message[7:]
@@ -103,8 +114,8 @@ def main():
 					run(tn, "say " + response)
 					print("AI : " + response)
 		except Exception as e:
-			print("Something went wrong. Make your -netconport " + str(tn_port) + "is added to launch options.")
-			print('Error:' + e)
+			print("Something went wrong. Make sure -netconport " + str(tn_port) + " is added to launch options.")
+			print(e)
 			sys.exit(1)
 
 
