@@ -1,11 +1,15 @@
 # csgo-oogabooga-chatbot
 A simple free locally-run CS:GO chatbot that replies to messages in chat for you.
 
+
 Uses the (locally-run) oogabooga web ui for running LLMs and NOT ChatGPT.
+
 
 As you are self-hosting the LLMs (that unsuprisingly use your GPU) you may see a performance decrease in CS:GO (although, this should be minor as CS:GO is very CPU oriented).
 
+
 You COULD host the LLMs on another device (w/GPU) and use the oogabooga public api feature to play without performance changes.
+
 
 Oogabooga also offers a CPU mode but this would likely lead to a much worse performance in CS:GO.
 # Setup
