@@ -13,7 +13,8 @@ from os import path
 tn_host = "127.0.0.1"
 tn_port = "2121"
 cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\"
-user = "Bizon Man" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
+user = "smfreeze" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
+infinite_chat_mode = 0 # Setting to 1 causes bot to respond to itself
 
 def signal_handler(signal, frame):
 	print("\nquitting...")
@@ -86,10 +87,10 @@ def main():
 				message = re.sub(r'^.*? : ', '', message)
 				message = re.sub(r"^\s+", "", message)
 
-				print(sender + " : " + message)
-				if sender == user:
-					if message[:3] == 'prompt:':
-						message = message[6:]
+				if sender == user and infinite_chat_mode == 0:
+					if message[:7] == 'prompt:':
+						print(sender + " : " + message)
+						message = message[7:]
 						response = oob.getResponse(message)
 						run(tn, "say " + response)
 						print("AI : " + response)
