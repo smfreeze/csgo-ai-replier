@@ -1,5 +1,5 @@
 # csgo-oogabooga-chatbot
-A simple free locally-run CS:GO chatbot that replies to messages in chat for you.
+A very simple, free, locally-run CS:GO chatbot that replies to messages in chat for you.
 
 
 Uses the (locally-run) oogabooga web ui for running LLMs and NOT ChatGPT.
