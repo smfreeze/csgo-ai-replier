@@ -34,8 +34,7 @@ Complete the setup correctly and run the program.
 
 In a CS:GO game type 'OogaMenu' in chat to get the menu chat interface, enable and disable what you want.
 
-
-
+<br>
 
 ### A Warning
 
