@@ -10,11 +10,11 @@ from time import sleep
 from os import path
 
 # Config
-tn_host = "127.0.0.1"
+tn_host = "127.0.0.1" # CSGO telnet stuffs
 tn_port = "2121"
-cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\"
-user = "smfreeze" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
-infinite_chat_mode = False # Setting to True causes bot to respond to itself
+cfg_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo\\cfg\\" # Path to CSGO config goes here
+user = "Example" # Your CSGO Username to avoid infinite looping (just the base name, no clan or anything else)
+
 
 def signal_handler(signal, frame):
 	print("\nquitting...")
@@ -37,6 +37,10 @@ def run(txn, command):
 signal.signal(signal.SIGINT, signal_handler)
 
 def main():
+	awaiting_user_message = False
+	reply_status = True #If bot replies to messages (true = it does)
+	infinite_chat_mode = False #If bot replies to itself (true = it replies)
+
 	if (len(sys.argv) > 1):
 		if (sys.argv[1] == "-h" or sys.argv[1] == "--help"):
 			print(colored("Run with no arguments to initiate and connect to csgo", attrs=['bold']))
@@ -87,32 +91,47 @@ def main():
 				message = re.sub(r'^.*? : ', '', message)
 				message = re.sub(r"^\s+", "", message)
 				
-				'''
-				if message == 'infinite_chat_mode = True' and infinite_chat_mode == 0 and sender == user:
-					infinite_chat_mode = True
+				if message == 'OogaMenu' and sender == user:
+					awaiting_user_message = True
 					sleep(1)
-					run(tn, "say Infinite chat has been enabled - the bot will now respond to itself.")
-				if message == 'infinite_chat_mode = False' and infinite_chat_mode == 1 and sender == user:
-					infinite_chat_mode = False
+					run(tn, "say 0 - Toggle ooga replies (currently set to " + str(reply_status) + ")")
 					sleep(1)
-					run(tn, "say Infinite chat has been disabled - the bot will no longer respond to itself.")
-				'''
+					run(tn, "say 1 - Toggle infinite chat mode (currently set to " + str(infinite_chat_mode) + ")")
+					sleep(1)
+					run(tn, "say 2 - Close menu")
+
+				if awaiting_user_message == True and sender == user:
+					if message == '0':
+						reply_status = not reply_status
+						awaiting_user_message = False
+						sleep(1)
+						run(tn, "say Ooga reply status set to " + str(reply_status))
+					if message == '1':
+						infinite_chat_mode = not infinite_chat_mode
+						awaiting_user_message = False
+						sleep(1)
+						run(tn, "say Infinite chat mode set to " + str(infinite_chat_mode))
+					if message == '2':
+						awaiting_user_message = False
+						sleep(1)
+						run(tn, "say Menu Closed")
 				
-				if sender == user and infinite_chat_mode == False:
-					if message[:7] == 'prompt:':
+				if awaiting_user_message == False and reply_status == True:
+					if sender == user and infinite_chat_mode == False:
+						if message[:7] == 'prompt:':
+							print(sender + " : " + message)
+							message = message[7:]
+							response = oob.getResponse(message)
+							run(tn, "say " + response)
+							print("AI : " + response)
+						else:
+							print(sender + " : " + message)
+							pass
+					else:
 						print(sender + " : " + message)
-						message = message[7:]
 						response = oob.getResponse(message)
 						run(tn, "say " + response)
 						print("AI : " + response)
-					else:
-						print(sender + " : " + message)
-						pass
-				else:
-					print(sender + " : " + message)
-					response = oob.getResponse(message)
-					run(tn, "say " + response)
-					print("AI : " + response)
 		except Exception as e:
 			print("Something went wrong. Make sure -netconport " + str(tn_port) + " is added to launch options.")
 			print(e)
