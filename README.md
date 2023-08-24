@@ -35,7 +35,7 @@ Complete the setup correctly and run the program.
 In a CS:GO game type 'OogaMenu' in chat to get the menu chat interface, enable and disable what you want.
 
 
-## A Warning
+### A Warning
 
 Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
 
