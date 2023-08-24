@@ -28,7 +28,7 @@ AI: SHUT UP YOU UGLY FAT LOSER
 Obviously, the response would change with the model and your character description, it is very programmable, even with very little experience with oogabooga/gradio interface.
 
 
-# Use
+## Use
 Complete the setup correctly and run the program.
 
 
@@ -36,7 +36,7 @@ In a CS:GO game type 'OogaMenu' in chat to get the menu chat interface, enable a
 
 
 
-# Warning
+## Warning
 
 Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
 
