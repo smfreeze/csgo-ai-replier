@@ -41,10 +41,7 @@ In a CS:GO game type 'OogaMenu' in chat to get the menu chat interface, enable a
 
 Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
 
-
-
-
-
+<br><br>
 
 # Setup
 ## Program setup
