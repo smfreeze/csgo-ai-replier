@@ -38,7 +38,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 def main():
 	awaiting_user_message = False
-	reply_status = True #If bot replies to messages (true = it does)
+	reply_status = True #If bot replies to enemy and teammate messages (true = it does)
 	infinite_chat_mode = False #If bot replies to itself (true = it replies)
 
 	if (len(sys.argv) > 1):
