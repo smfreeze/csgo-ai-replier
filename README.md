@@ -2,7 +2,7 @@
 A very simple, free, locally-run CS:GO chatbot that replies to messages in chat for you.
 
 
-Uses the (locally-run) oogabooga web ui for running LLMs and NOT ChatGPT.
+Uses the (locally-run) oogabooga web ui for running LLMs and NOT ChatGPT (completely free, not chatgpt API key needed)
 
 
 As you are self-hosting the LLMs (that unsuprisingly use your GPU) you may see a performance decrease in CS:GO (although, this should be minor as CS:GO is very CPU oriented).
