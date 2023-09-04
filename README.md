@@ -40,7 +40,7 @@ Currently working on updating this with CS2 support.
 
 Also, this is a bit outdated, working on some stuff.
 
-### A Warning
+## Warning
 
 Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
 
