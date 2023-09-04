@@ -37,6 +37,11 @@ In a CS:GO game type 'OogaMenu' in chat to get the menu chat interface, enable a
 
 <br>
 
+## Future
+Currently working on updating this with CS2 support.
+
+Also, this is a bit outdated, working on some stuff.
+
 ### A Warning
 
 Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
@@ -55,12 +60,6 @@ cd csgo-oogabooga-chatbot
 pip3 install -r requirements.txt
 ```
 Make appropriate changes to Program.py in the config section
-
-## Future
-Currently working on updating this with CS2 support.
-
-Also, this is a bit outdated, working on some stuff.
-
 
 
 ## Oogabooga setup
