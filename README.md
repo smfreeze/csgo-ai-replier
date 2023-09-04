@@ -56,6 +56,13 @@ pip3 install -r requirements.txt
 ```
 Make appropriate changes to Program.py in the config section
 
+## Future
+Currently working on updating this with CS2 support.
+
+Also, this is a bit outdated, working on some stuff.
+
+
+
 ## Oogabooga setup
 (Thanks [DeSinc](https://github.com/DeSinc/SallyBot) for some data regarding this Oogabooga setup guide)
 <br><br>
