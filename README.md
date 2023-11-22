@@ -20,9 +20,9 @@ It will automatically reply to every enemy/teammate message, but you can talk to
 Example Conversation:
 ```
 Player: You suck!
-AI: UR FAT AND UGLY AND CAN'T SHOOT FOR SHIT
+AI: Like your mother
 Player: You are actually the worst.
-AI: SHUT UP YOU UGLY FAT LOSER
+AI: Your aim is the worst.
 ```
 
 Obviously, the response would change with the model and your character description, it is very programmable, even with very little experience with oogabooga/gradio interface.
