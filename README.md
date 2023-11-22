@@ -1,4 +1,7 @@
 # csgo-oogabooga-chatbot
+
+# DOES NOT WORK IN CS2 - as they removed, admittedly outdated, functions that makes this possible.
+
 A very simple, free, locally-run CS:GO chatbot that replies to messages in chat for you.
 
 
