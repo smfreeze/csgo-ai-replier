@@ -45,9 +45,7 @@ Also, this is a bit outdated, working on some stuff.
 
 ## Warning
 
-Fair warning, I got a 24h griefing ban which I can only presume was from using this application (although I did team damage a bit, so not 100% sure).
-
-Obviously you don't have to use this application to make negative remarks to enemies (which may or may not have been why I receieved a ban).
+Got a ban for greifing that might have been related to using this.
 
 Goes without saying that I am not responsible for malicious use or for any bans that you may receive!
 <br><br>
